@@ -1,46 +1,9 @@
 <script setup lang="ts">
-import {
-  Calendar,
-  Home,
-  Inbox,
-  Search,
-  Settings,
-  PanelLeftOpen,
-  PanelLeftClose,
-} from "lucide-vue-next";
+import { PanelLeftOpen, PanelLeftClose } from "lucide-vue-next";
 import { ref, watch } from "vue";
 
 const isCollapsed = ref(false);
 const sidebarWidth = ref(isCollapsed.value ? "64px" : "240px");
-
-// Menu items.
-const items = [
-  {
-    title: "Home",
-    url: "/",
-    icon: Home,
-  },
-  {
-    title: "Vista 2",
-    url: "/vista2",
-    icon: Inbox,
-  },
-  {
-    title: "Vista 3",
-    url: "/vista3",
-    icon: Calendar,
-  },
-  {
-    title: "Search",
-    url: "#",
-    icon: Search,
-  },
-  {
-    title: "Settings",
-    url: "#",
-    icon: Settings,
-  },
-];
 
 // Watch for changes in isCollapsed
 watch(isCollapsed, (newValue) => {
@@ -54,7 +17,7 @@ watch(isCollapsed, (newValue) => {
     :style="{ width: sidebarWidth }"
   >
     <Button
-      size="small"
+      size="xs"
       @click="isCollapsed = !isCollapsed"
       class="absolute -right-3 top-6 z-50 bg-white p-1 border shadow-sm hover:bg-gray-100"
     >
@@ -64,10 +27,19 @@ watch(isCollapsed, (newValue) => {
 
     <div class="h-full overflow-y-auto">
       <div class="p-4">
-        <h2 class="font-semibold mb-4" v-if="!isCollapsed">Application</h2>
+        <div class="mb-4">
+          <img
+            src="~/assets/images/logo.png"
+            alt="Logo"
+            :class="{ ' h-16 w-16': !isCollapsed, 'w-8': isCollapsed }"
+          />
+        </div>
+        <h2 class="font-semibold mb-4 ml-2" v-if="!isCollapsed">
+          CiberDefensa
+        </h2>
         <nav>
           <ul class="space-y-2">
-            <li v-for="item in items" :key="item.title">
+            <li v-for="item in sideBarItems" :key="item.title">
               <NuxtLink
                 :to="item.url"
                 class="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100"
