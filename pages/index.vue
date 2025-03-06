@@ -71,117 +71,35 @@ import { Shield } from "lucide-vue-next";
           </TabsList>
 
           <TabsContent value="cybersecurity" className="space-y-4">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  Ciberseguridad y Ciberdefensa
-                </CardTitle>
-                <CardDescription>
-                  Protección de sistemas informáticos y redes ante accesos no
-                  autorizados
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-slate-700 dark:text-slate-300">
-                  La ciberseguridad se encarga de proteger los sistemas
-                  informáticos y redes ante accesos no autorizados, ataques
-                  maliciosos o vulnerabilidades que puedan comprometer la
-                  integridad de la información. Dentro de este ámbito, la
-                  ciberdefensa se enfoca en la detección, prevención y respuesta
-                  ante ciberataques que amenacen infraestructuras críticas,
-                  asegurando la continuidad de servicios esenciales en sectores
-                  estratégicos como energía, comunicaciones y transporte.
-                </p>
-              </CardContent>
-            </Card>
+            <TabCard
+              title="Ciberseguridad y Ciberdefensa"
+              description="Protección de sistemas informáticos y redes ante accesos no autorizados"
+              content="La ciberseguridad se encarga de proteger los sistemas informáticos y redes ante accesos no autorizados, ataques maliciosos o vulnerabilidades que puedan comprometer la integridad de la información. Dentro de este ámbito, la ciberdefensa se enfoca en la detección, prevención y respuesta ante ciberataques que amenacen infraestructuras críticas, asegurando la continuidad de servicios esenciales en sectores estratégicos como energía, comunicaciones y transporte."
+            />
           </TabsContent>
 
           <TabsContent value="ai" className="space-y-4">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <Brain className="mr-2 h-6 w-6 text-blue-600" />
-                  Inteligencia Artificial y Big Data
-                </CardTitle>
-                <CardDescription>
-                  Análisis de grandes volúmenes de información para la toma de
-                  decisiones estratégicas
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-slate-700 dark:text-slate-300 mb-4">
-                  La inteligencia artificial (IA) y el big data han
-                  revolucionado la capacidad para analizar enormes volúmenes de
-                  información. Estos avances permiten identificar patrones,
-                  predecir comportamientos y facilitar la toma de decisiones
-                  estratégicas.
-                </p>
-                <p className="text-slate-700 dark:text-slate-300">
-                  En el contexto de la seguridad, la IA se utiliza para:
-                </p>
-                <ul
-                  className="list-disc pl-6 mt-2 space-y-1 text-slate-700 dark:text-slate-300"
-                >
-                  <li>Detectar actividades sospechosas en tiempo real.</li>
-                  <li>Automatizar respuestas a incidentes de seguridad.</li>
-                  <li>
-                    Simular escenarios de conflicto y modelar posibles amenazas.
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+            <TabCard
+              title="Inteligencia Artificial y Big Data"
+              description="Análisis de grandes volúmenes de información para la toma de decisiones estratégicas"
+              content="La inteligencia artificial (IA) y el big data han revolucionado la capacidad para analizar enormes volúmenes de información. Estos avances permiten identificar patrones, predecir comportamientos y facilitar la toma de decisiones estratégicas. En el contexto de la seguridad, la IA se utiliza para: Detectar actividades sospechosas en tiempo real. Automatizar respuestas a incidentes de seguridad. Simular escenarios de conflicto y modelar posibles amenazas."
+            />
           </TabsContent>
 
           <TabsContent value="crypto" className="space-y-4">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <Lock className="mr-2 h-6 w-6 text-blue-600" />
-                  Criptografía y Comunicaciones Seguras
-                </CardTitle>
-                <CardDescription
-                  >Garantía de confidencialidad e integridad de la
-                  información</CardDescription
-                >
-              </CardHeader>
-              <CardContent>
-                <p className="text-slate-700 dark:text-slate-300">
-                  La criptografía es fundamental para garantizar la
-                  confidencialidad e integridad de la información, utilizando
-                  algoritmos que permiten el cifrado de datos sensibles. Las
-                  comunicaciones seguras aseguran que la transmisión de
-                  información crítica entre entidades gubernamentales, militares
-                  y organizaciones estratégicas se realice sin riesgo de
-                  interceptación o manipulación, protegiendo así la soberanía y
-                  la seguridad nacional.
-                </p>
-              </CardContent>
-            </Card>
+            <TabCard
+              title="Criptografía y Comunicaciones Seguras"
+              description="Garantía de confidencialidad e integridad de la información"
+              content="La criptografía es fundamental para garantizar la confidencialidad e integridad de la información, utilizando algoritmos que permiten el cifrado de datos sensibles. Las comunicaciones seguras aseguran que la transmisión de información crítica entre entidades gubernamentales, militares y organizaciones estratégicas se realice sin riesgo de interceptación o manipulación, protegiendo así la soberanía y la seguridad nacional."
+            />
           </TabsContent>
 
           <TabsContent value="networks" className="space-y-4">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <Network className="mr-2 h-6 w-6 text-blue-600" />
-                  Redes y Sistemas de Información
-                </CardTitle>
-                <CardDescription
-                  >Diseño y mantenimiento de infraestructuras de red
-                  seguras</CardDescription
-                >
-              </CardHeader>
-              <CardContent>
-                <p className="text-slate-700 dark:text-slate-300">
-                  El diseño y mantenimiento de infraestructuras de red seguras
-                  es esencial para la defensa nacional. La interconexión de
-                  dispositivos y sistemas requiere protocolos robustos y
-                  sistemas de monitoreo que detecten y mitiguen
-                  vulnerabilidades, garantizando la resiliencia frente a ataques
-                  cibernéticos y fallas operativas.
-                </p>
-              </CardContent>
-            </Card>
+            <TabCard
+              title="Redes y Sistemas de Información"
+              description="Diseño y mantenimiento de infraestructuras de red seguras"
+              content="El diseño y mantenimiento de infraestructuras de red seguras es esencial para la defensa nacional. La interconexión de dispositivos y sistemas requiere protocolos robustos y sistemas de monitoreo que detecten y mitiguen vulnerabilidades, garantizando la resiliencia frente a ataques cibernéticos y fallas operativas."
+            />
           </TabsContent>
         </Tabs>
       </section>
@@ -325,17 +243,18 @@ import { Shield } from "lucide-vue-next";
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Contacto</h3>
-            <p className="text-slate-300 mb-2">info@cienciaseguridad.org</p>
-            <p className="text-slate-300">+1 (555) 123-4567</p>
+            <p className="text-slate-300 mb-2">sailyhg@uci.cu</p>
           </div>
         </div>
         <div
           className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-400"
         >
-          <!-- <p>
-            © {new Date().getFullYear()} Ciencias Informáticas para la Seguridad
-            y Defensa Nacional. Todos los derechos reservados.
-          </p> -->
+          <p>
+            {{
+              `© ${new Date().getFullYear()} Ciencias Informáticas para la Seguridad
+            y Defensa Nacional. Todos los derechos reservados.`
+            }}
+          </p>
         </div>
       </div>
     </footer>
