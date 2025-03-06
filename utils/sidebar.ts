@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-vue-next";
+import { Home, GraduationCap } from "lucide-vue-next";
 export const sideBarItems = [
   {
     title: "Página principal",
@@ -6,23 +6,8 @@ export const sideBarItems = [
     icon: Home,
   },
   {
-    title: "Vista 2",
+    title: "Recursos y enlaces",
     url: "/vista2",
-    icon: Inbox,
-  },
-  {
-    title: "Vista 3",
-    url: "/vista3",
-    icon: Calendar,
-  },
-  {
-    title: "Search",
-    url: "#",
-    icon: Search,
-  },
-  {
-    title: "Settings",
-    url: "#",
-    icon: Settings,
+    icon: GraduationCap,
   },
 ];

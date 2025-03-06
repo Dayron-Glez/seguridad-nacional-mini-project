@@ -1,13 +1,5 @@
 <script setup lang="ts">
-import {
-  Calendar,
-  Home,
-  Inbox,
-  Search,
-  Settings,
-  PanelLeftOpen,
-  PanelLeftClose,
-} from "lucide-vue-next";
+import { PanelLeftOpen, PanelLeftClose } from "lucide-vue-next";
 import { ref, watch } from "vue";
 
 const isCollapsed = ref(false);
@@ -25,7 +17,7 @@ watch(isCollapsed, (newValue) => {
     :style="{ width: sidebarWidth }"
   >
     <Button
-      size="small"
+      size="xs"
       @click="isCollapsed = !isCollapsed"
       class="absolute -right-3 top-6 z-50 bg-white p-1 border shadow-sm hover:bg-gray-100"
     >

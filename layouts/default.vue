@@ -1,6 +1,6 @@
 <template>
   <SidebarProvider>
-    <div class="flex min-h-screen">
+    <div class="flex h-screen">
       <AppSidebar />
       <main class="flex-1 p-4">
         <slot />
